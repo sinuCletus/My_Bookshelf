@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-/* header styles */
+/* class .header section styles */
 .header {
     display: flex;
     flex-direction: column;
@@ -61,10 +61,6 @@ ul {
     font-size: 18px;
 }
 
-.action {
-    background-color: #3882F6;
-}
-
 .text button {
     border-radius: 5px;
     border: none;
@@ -100,7 +96,7 @@ ul {
     width: 500px;
 }
 
-/*Styles for the class "reading" section*/
+/* Styles for the class .reading section */
 
 .reading {
     display: flex;
@@ -134,3 +130,64 @@ ul {
     max-width: 150px;
 }
 
+/* styles for class .quote section */
+
+.quote {
+    padding: 80px 160px;
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.quote blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote p {
+    text-align: end;
+}
+
+/* class .action section styles */
+.action {
+    padding: 80px 160px;
+}
+
+.action .action.text {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px 80px;
+}
+
+.action.text div h2 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.action.text div {
+    flex: auto;
+}
+
+.action.text div:nth-child(1) {
+    max-width: 75%;
+}
+
+.action.text div:nth-child(2) {
+    flex: 1;
+    max-width: min-content;
+}
+
+.action.text div:nth-child(2) button {
+    background-color:#3882F6;
+    color: #F9FAF8;
+    transition-duration: .4s;
+    text-align: center;
+}
+
+.action.text div:nth-child(2) button:hover {
+    background-color: darkblue;
+    color: #E5E7EB;
+}
