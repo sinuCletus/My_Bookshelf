@@ -70,12 +70,22 @@ ul {
     border: none;
     padding: 10px 5px;
     background-color: #3882F6;
-    color: #F9FAF8;
     transition-duration: 1s;
+    border: 1px solid #F9FAF8;
+}
+
+.text button a {
+    color: #F9FAF8;
+    transition-duration: .4s;
+}
+
+.text button:hover a {
+    color: #E5E7EB;
 }
 
 .text button:hover {
-    background-color: rgb(114, 114, 194);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #E5E7EB;
 }
 
 .hero {
@@ -88,4 +98,27 @@ ul {
 
 .hero img {
     width: 500px;
+}
+
+/*Styles for the class reading section*/
+
+.reading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 128px;
+}
+
+.reading .books {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reading .books img {
+    height: auto;
+    width: 150px;
+    transform: rotate(180deg);
+    flex: auto;
 }
